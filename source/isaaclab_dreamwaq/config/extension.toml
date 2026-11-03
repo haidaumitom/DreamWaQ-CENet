@@ -1,0 +1,33 @@
+[package]
+
+# Semantic Versioning is used: https://semver.org/
+version = "0.1.0"
+
+# Description
+category = "isaaclab"
+readme  = "README.md"
+
+title = "DreamWAQ CENet"
+author = "haidaumitom"
+maintainer = "haidaumitom"
+description = "CENet-based Unitree Go2 locomotion task for NVIDIA Isaac Lab"
+repository = "https://github.com/haidaumitom/DreamWaQ-CENet"
+keywords = ["isaaclab", "dreamwaq", "cenet", "unitree", "go2", "reinforcement-learning"]
+
+[dependencies]
+"isaaclab" = {}
+"isaaclab_assets" = {}
+"isaaclab_rl" = {}
+"isaaclab_tasks" = {}
+
+[[python.module]]
+name = "isaaclab_dreamwaq_tasks"
+
+[isaac_lab_settings]
+# TODO: Uncomment and list any apt dependencies here.
+#       If none, leave it commented out.
+# apt_deps = ["example_package"]
+# TODO: Uncomment and provide path to a ros_ws
+#       with rosdeps to be installed. If none,
+#       leave it commented out.
+# ros_ws = "path/from/extension_root/to/ros_ws"
